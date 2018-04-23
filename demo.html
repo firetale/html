@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html5全局属性</title>
+	<style type="text/css">
+		.class2 {background-color: gray;color: white;padding: 5px;margin: 2px;}
+		.class1 {font-size: x-large;}
+	</style>
+</head>
+
+<body>
+	<p><h3>accesskey属性</h3></p><!--accesskey设置表单相关元素的切换键位，一般操作是Alt+设定的键位-->
+	<p>
+	<form>
+		Name:<input type="text" name="name" accesskey="n" /><br />
+		Password:<input type="password" name="password" accesskey="p"/><br/>
+		<input type="submit" value="登陆" accesskey="s"/><br>
+	</form>
+	</p>
+	<p><h3>class属性(含JavaScript脚本)</h3></p>
+<!--class属性在纯HTML中没有任何实际意义，实际属于CSS常用类的一种，可在其中定义其属性，也可在JavaScript脚本中定义。-->
+	<p>
+		<a class="class1 class2" href="http://apple.com">苹果官方网站</a><br/>
+		<a class="class2 otherclass" href="http://w3c.org">W3C国际组织官方网站</a><br/>
+		<script type="text/javascript">
+			var elems=document.getElementsByClassName("otherclass");
+			for(i=0;i<elems.length;i++){
+				var x = elems[i];
+				x.style.border="thin solid black";
+				x.style.backgroundColor="white";
+				x.style.color="black";
+			}
+		</script>
+	</p>
+</body>
+</html>
