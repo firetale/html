@@ -36,7 +36,7 @@
 	<p><h3>contenteditable属性</h3></p><!--contenteditable属性是让用户能够修改页面上的内容，常用在网页搜索栏的默认显示中，且修改的内容为只读模式，网页刷新后会恢复默认文字-->
 	<p contenteditable="true">今晚要下雨</p><br/>
     <p><h3>hidden属性</h3></p><!--hidden属性是个布尔值，表示相关的元素无需主注意，浏览器直接对此元素隐藏，但通过JavaScript语言可以进行是否显示的控制。-->
-	<script type="text/javascript">
+	<p><script type="text/javascript">
 		var toggleHidden = function(){
 			var elem = document.getElementById("toggle");
 			if (elem.hasAttribute("hidden")){
@@ -53,5 +53,24 @@
 		<tr id="toggle" hidden><td>Joe Smith</td><td>New York</td></tr>
 		<tr><td>Anne Jones</td><td>Parist</td></tr>
 	</table>
+    </p>
+    <p>id属性</p><!--id属性主要配合CSS适用，给HTML元素分配唯一标识符，CCS代码为"#"-->
+    <p>
+       <style>
+		   #w3clink {
+			   background: grey;
+			   color: white;
+			   padding:5px;
+			   border: thin solid black;
+		   }
+		</style>
+		<a href="#">Apress web site</a>
+		<p>--------美丽的分割线</p>
+		<a id="w3clink" href="#">W3c web site</a>
+    </p>
+	<p>title属性</p><!--title属性主要用在超链接代码中，标记了title属性的元素在鼠标移东至元素时会显示其规定的名称，不区分语言--> 
+	<p>
+	<a title="谷歌搜搜" href="http://www.goolge.com" >谷歌</a>
+	</p>
 </body>
 </html>
