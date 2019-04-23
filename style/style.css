@@ -1,19 +1,27 @@
 /* CSS Document */
 body{
+	background-color: #ccc;
+	color: blue;
 	font:100% Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-image: url("/img/bg-pattern.jpg");
 }
 h1,h2 {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-weight: normal;
+	letter-spacing: 1px;
+	text-align: center;
 }
 h1 {
 	font-size: 2.1875em;
 }
 h2 {
+	background-color: #eaebef;
+	color: #7d717c;
 	font-size: 1.75em;
 }
 .intro .subhead {
-	font-size: 1.125em
+	font-size: 1.125em;
+	text-align: center;
 }
 .intro p {
 	font-size: 1.0625em;
@@ -21,14 +29,40 @@ h2 {
 }
 .project p {
 	font-size: 0.97375em;
+	line-height: 1.65;
+	text-indent: 2em;
 }
 p {
 	font-style: italic;
+	text-align: justify;
 }
 em,a:link,.intro .subhead {
 	font-weight: bold;	
 }
-
 .intro {
+	background-color: #686a63;
+	color: #fff;
 	line-height: 1.45;
+	padding: 1px 1.875em .7em;
+}
+
+a:link{
+	color: #e10000;
+}
+a:visited{
+	color:#b44f4f;
+}
+a:hover{
+	color:#f00;
+}
+.intro a{
+	color:#fdb09d;
+}
+.intro a:hover{
+	color:#fec4b6;
+}
+
+.architect {
+	background-color: #fff;
+	padding: 1.5em 1.75em;
 }
