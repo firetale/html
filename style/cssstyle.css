@@ -2,6 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+.page {
+	margin: 0 auto;
+	width: 960px;
+}
 article, aside, figcaption, figure, footer, header, main, nav, section {
 	display: block;
 	}
@@ -39,6 +43,10 @@ img {
 li {
 	
 }
+main {
+	float: left;
+	width: 600px;
+}
 
 .social-sites li {
 	display: inline;
@@ -66,7 +74,10 @@ li {
 }
 
 .sidebar {
+	float: left;
+	margin-top: 1.875em;
 	width: 300px;
+	border: 1px solid #ED0E11;
 }
 
 .about {
@@ -101,8 +112,10 @@ li {
 	font-size: 0.6875em;
 }
 .post-footer {
-	border-bottom: 1px solid #dbdbdb;
-	border-top:1px solid #dbdbdb;
-	padding-bottom:.7em;
-	padding-top:.7em;
+	clear: left;
+}
+.post-photo {
+	float: left;
+	margin-bottom: 2px;
+	margin-right: 22px;
 }

@@ -1,0 +1,71 @@
+/* CSS Document */
+body{
+	font: 100%/1.2 "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	magrin:0;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.page {
+	margin: 0 auto;
+	max-width: 60em;
+}
+h1 {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 2.25em;
+	font-weight: 300;
+}
+.about h2, .mod h2 {
+	font-size: 0.875em;
+}
+.logo 
+.social-sites
+.nav-main li {
+	text-align: center;
+}
+
+/*创建可伸缩图像*/
+.post-photo, .post-photo-full, about img, .map {
+	max-width: 100%;
+}
+@media only screen and (min-width:20em){
+	.nav-main li {
+		border-left: 1px solid #c8c8c8;
+		display: inline-block;
+		text-align: left;
+	}
+	.nav-main li:first-child{
+		border-left:none;
+	}
+	.nav-main a {
+		display: inline-block;
+		font-size: 1em;
+		padding: .5em .9em .5em 1.15em;
+	}
+}
+@media only screen and (min-width:30em){
+	.masthead {position: relative;}
+	.social-sites{
+		position: absolute;
+		right:-3px;
+		top: 41px;
+	}
+	.logo{
+		margin-bottom: 8px;
+		text-align: left;
+	}
+	.nav-main {
+		margin-top: 0;
+	}
+	.post-photo{
+		float: left;
+		margin-bottom: 2px;
+		margin-right: 22px;
+		max-width: 61.667%;
+	}
+	.post-footer {
+		clear: left;
+	}
+}
