@@ -25,7 +25,9 @@ h1 {
 .nav-main li {
 	text-align: center;
 }
-
+.footer {
+	clear: both;
+}
 /*创建可伸缩图像*/
 .post-photo, .post-photo-full, about img, .map {
 	max-width: 100%;
@@ -67,5 +69,32 @@ h1 {
 	}
 	.post-footer {
 		clear: left;
+	}
+}
+@media only screen and (min-width:30em) and (max-width:47.9375em){
+	.about {
+		overflow: hidden;
+	}
+	.about img {
+		float: left;
+		margin-right: 15px;
+	}
+}
+@media only screen and (min-width:48em){
+	.container {
+		background: url("/img/bg.png") repeat-y 65.9375% 0;
+		padding-bottom: 1.875em;
+	}
+	main {
+		float: left;
+		width: 62.5%;
+	}
+	.sidebar {
+		float: right;
+		margin-top: 1.875em;
+		width: 31.25%;
+	}
+	.nav-main {
+		margin-bottom: 0;
 	}
 }
