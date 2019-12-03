@@ -1,0 +1,18 @@
+.wrap {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	background-color: #5B5353;
+	height: 100px;
+	display: flex;
+	border:solid 1px #0014F5;
+	align-items: center;
+	padding:0 1rem;
+}
+a {
+	text-decoration: none;
+	color: red;
+	margin-right: 1rem;
+	border: 1px solid #0015FF;
+}
+.first {
+	margin-right: auto;
+}
